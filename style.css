@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: lightblue;
+    background-color: lightgreen;
     color: #222;
     padding: 40px;
 }
@@ -14,6 +14,7 @@ body {
 h1 {
     color: darkblue;
     margin-bottom: 15px;
+    font-size: 40px;
 
 }
 
@@ -29,4 +30,53 @@ p {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #6c2bd9;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #6c2bd9;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-card {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
 }
